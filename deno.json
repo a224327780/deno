@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "lib": [
+      "deno.window"
+    ],
+    "strict": true
+  },
+  "unstable": [
+    "kv",
+    "cron"
+  ],
+  "tasks": {
+    "start": "deno run -A main.ts"
+  },
+  "exclude": [
+    "dist/"
+  ],
+  "deploy": {
+    "project": "76264e2d-3a96-4cda-8f25-2b8b626614c7",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
+  }
+}
